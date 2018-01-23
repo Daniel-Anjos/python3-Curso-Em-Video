@@ -4,7 +4,7 @@ cont = 0
 num = 0
 total = 0 
 
-while num != 999:
+while True:
   num = int(input('Digite um número: '))
   if num == 999:
     break
