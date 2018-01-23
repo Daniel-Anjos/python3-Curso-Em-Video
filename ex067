@@ -1,0 +1,15 @@
+tab = int(input('Quer ver a tabuada de qual valor? '))
+
+while True:
+   if tab <= 0:
+     break
+   else: 
+     print('-'*20)
+     for cont in range (1,11):
+        print (f'{tab} X {cont}  = {tab * cont}')
+     print('-'*20)
+   tab = int(input('Quer ver a tabuada de qual valor? '))
+   
+print ('\n Fim da Tabuada. ')
+   
+
