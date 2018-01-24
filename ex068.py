@@ -2,7 +2,7 @@
 O programa deve também mostrar a quantidade de vitórias consecutivas do jogador.'''
 
 from random import randint
-
+vitorias = 0
 print('=-' * 20)
 print('Jogo do Par ou Ímpar')
 print('=-' * 20)
@@ -28,3 +28,5 @@ while True:
         print(f'Você jogou {num} e o computador {x}. O total foi {total} que é {y}')
         print('Você perdeu')
         break
+print('='*20)
+print(f'**** GAME OVER ***** \n Você teve {vitorias} vitórias seguidas.')
