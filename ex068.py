@@ -3,7 +3,6 @@ O programa deve também mostrar a quantidade de vitórias consecutivas do jogado
 
 from random import randint
 vitorias = 0
-user = ' '
 
 print('=-' * 20)
 print('Jogo do Par ou Ímpar')
@@ -11,12 +10,12 @@ print('=-' * 20)
 
 while True:
     num = int(input('Digite um valor: '))
+    x = randint(0, 10)
+    total = x + num
+    user = ' '
     while user not in 'PI':
         user = str(input('Par ou Ímpar? [P/I]: ').strip().upper()[0])
     print('-' * 30)
-    x = randint(0, 10)
-    total = x + num
-
     if (total % 2 == 0):
         win = 'P'
         y = 'Par'
@@ -24,6 +23,7 @@ while True:
         win = 'I'
         y = 'Ímpar'
     if win == user:
+        vitorias+= 1
         print(f'Você jogou {num} e o computador {x}. O total foi {total} que é {y}')
         print('Você ganhou!')
         print('Vamos jogar novamente... \n')
@@ -31,5 +31,6 @@ while True:
         print(f'Você jogou {num} e o computador {x}. O total foi {total} que é {y}')
         print('Você perdeu')
         break
+        
 print('='*20)
 print(f'**** GAME OVER ***** \n Você teve {vitorias} vitórias seguidas.')
