@@ -6,22 +6,26 @@ Quantas mulheres com menos de 20 anos'''
 homens = 0
 mulheres = 0
 maiores = 0
-sexo = ' '
+
 
 while True:
+  print('-'* 40)
   print('**** Cadastro de Serumaninhos ****')   
+  print('-'* 40)
   idade = int(input('Informe a idade: '))
   if idade >= 18:
     maiores+= 1
-  #while sexo not in ('MF'):
-  sexo = str(input('Informe o sexo [M/F]: ')).strip().upper()[0]
-  if sexo == 'M':
-    homens+= 1
-  else:
-    if idade < 20:
-      mulheres+= 1
-   
-  x = str(input('Deseja cadastrar mais alguém? [S/N]: ')).strip().upper()[0]
+  sexo = ' '
+  while sexo not in ('MF'):
+    sexo = str(input('Informe o sexo [M/F]: ')).strip().upper()[0]
+    if sexo == 'M':
+      homens+= 1
+    else:
+      if idade < 20:
+        mulheres+= 1
+  x = ' '
+  while x not in ('SN'):
+    x = str(input('Deseja cadastrar mais alguém? [S/N]: ')).strip().upper()[0]
   if x == 'N':
     break
     
