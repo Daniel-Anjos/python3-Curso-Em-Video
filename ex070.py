@@ -19,6 +19,7 @@ while True:
   nome = str(input('Nome do produto: '))
   preco = float(input('Preço: '))
   total += preco
+#Outra forma de inserir o menor preço para iniciar a variável é utilizando um contador no cadastro
   if menor == 0:
      menor = preco
 #Se não houver comparativo com o valor igual, quando o menor valor for o primeiro item, este não irá aparecer no print final
