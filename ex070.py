@@ -8,6 +8,9 @@ C) qual é o nome do produto mais barato. '''
 total = 0
 cont = 0
 menor = 0
+#Faltou zerar estas variáveis (Estava apresentando erro)
+menorNome = ' '
+menorPreco = 0
 
 print('='*30)
 print('*** Lojas Guanabara ***')
@@ -18,7 +21,8 @@ while True:
   total += preco
   if menor == 0:
      menor = preco
-  if preco < menor:
+#Se não houver comparativo com o valor igual, quando o menor valor for o primeiro item, este não irá aparecer no print final
+  if preco <= menor:
      menorNome = nome
      menorPreco = preco
   if preco > 1000:
