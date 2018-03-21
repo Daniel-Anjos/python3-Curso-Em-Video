@@ -23,7 +23,12 @@ notas50 = valor // 50
     break
 
 print('Você receberá: ')
-print(f'{notas50:.0f} notas de R$50,00')
-print(f'{notas20} notas de R$20,00')
-print(f'{notas10} notas de R$10,00')
-print(f'{notas1} notas de R$1,00')
+if notas50 != 0:
+   print(f'{notas50:.0f} notas de R$50,00')
+if notas20 != 0:
+  print(f'{notas20} notas de R$20,00')
+if notas10 != 0:
+  print(f'{notas10} notas de R$10,00')
+if notas1 != 0:
+  print(f'{notas1} notas de R$1,00')
+
